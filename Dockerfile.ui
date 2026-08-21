@@ -1,0 +1,21 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    curl \
+    && rm -rf /var/lib/apt/lists/*
+
+# Install Python dependencies
+RUN pip install --no-cache-dir streamlit requests
+
+# Copy UI code
+COPY src/api/ui.py .
+
+# Expose port
+EXPOSE 8501
+
+# Run Streamlit
+CMD ["streamlit", "run", "ui.py", "--server.port=8501", "--server.address=0.0.0.0"]
