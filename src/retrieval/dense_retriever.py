@@ -56,6 +56,13 @@ class DenseRetriever:
     def _build_index(self) -> None:
         """Build FAISS index from chunk embeddings."""
         self.logger.info(f"Building FAISS index from {len(self.chunks)} chunks...")
+
+        if not self.chunks:
+            # An empty corpus is valid: retrieval simply returns no results.
+            self.index = None
+            self.embeddings = np.zeros((0, 0), dtype=np.float32)
+            self.logger.warning("FAISS index not built: empty corpus")
+            return
         
         # Extract text from chunks
         texts = [chunk.content for chunk in self.chunks]
@@ -136,7 +143,30 @@ class DenseRetriever:
                 data = json.loads(line)
                 self.chunks.append(Chunk(**data))
         
+        self._validate_loaded_index()
+
         self.logger.info(f"Loaded dense index with {len(self.chunks)} chunks")
+
+    def _validate_loaded_index(self) -> None:
+        """Reject indexes whose contents are internally inconsistent."""
+        if self.index is None or self.embeddings is None:
+            raise ValueError(f"Dense index at {self.model_name!r} is incomplete")
+
+        if self.index.d != self.embeddings.shape[1]:
+            raise ValueError(
+                f"Dense index dimension ({self.index.d}) does not match the stored "
+                f"embeddings ({self.embeddings.shape[1]})"
+            )
+
+        if self.index.ntotal != len(self.chunks) or self.embeddings.shape[0] != len(self.chunks):
+            raise ValueError(
+                "Dense index is inconsistent with its chunk metadata: "
+                f"{self.index.ntotal} vectors, {self.embeddings.shape[0]} embeddings, "
+                f"{len(self.chunks)} chunks"
+            )
+
+        if len(self.chunks) and not np.isfinite(self.embeddings).all():
+            raise ValueError("Stored embeddings contain non-finite values")
     
     def retrieve(
         self,
@@ -154,8 +184,13 @@ class DenseRetriever:
             List of dicts with chunk_id, score, and chunk metadata
         """
         if self.index is None:
+            if not self.chunks:
+                return []
             raise RuntimeError("Index not built. Call index_chunks() or load_index() first.")
-        
+
+        if not query.strip():
+            return []
+
         # Embed query
         query_embedding = self._embed_texts([query])
         
@@ -186,6 +221,13 @@ class DenseRetriever:
         top_k: int = 10,
     ) -> list[list[dict]]:
         """Retrieve for multiple queries."""
+        if self.index is None and not self.chunks:
+            return [[] for _ in queries]
+
+        queries = [query for query in queries if query.strip()]
+        if not queries:
+            return []
+
         if self.model is None:
             self._load_model()
         

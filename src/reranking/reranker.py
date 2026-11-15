@@ -54,6 +54,18 @@ class CrossEncoderReranker:
         
         if not results:
             return []
+
+        # Deduplicate candidates by chunk id (first occurrence wins) so a
+        # rerank cannot return the same chunk twice.
+        seen: set[str] = set()
+        unique_results = []
+        for result in results:
+            chunk_id = result["chunk_id"]
+            if chunk_id in seen:
+                continue
+            seen.add(chunk_id)
+            unique_results.append(result)
+        results = unique_results
         
         if self.model is None:
             self._load_model()

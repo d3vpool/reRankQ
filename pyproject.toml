@@ -8,6 +8,7 @@ dependencies = [
     "fastapi>=0.104.0",
     "uvicorn[standard]>=0.24.0",
     "pydantic>=2.5.0",
+    "pyyaml>=6.0.0",
     "httpx>=0.25.0",
     "sentence-transformers>=2.2.2",
     "faiss-cpu>=1.7.4",
@@ -37,6 +38,13 @@ evaluation = [
 
 [project.scripts]
 rerankq = "src.api.main:app"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: exercises several components together, no external services",
+    "real_model: downloads and runs sentence-transformers models (opt-in)",
+]
 
 [tool.ruff]
 line-length = 88

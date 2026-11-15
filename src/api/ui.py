@@ -67,10 +67,35 @@ def check_health():
         return None
 
 
+def render_result(result: dict) -> None:
+    """Render a query result (metrics, answer, citations)."""
+    col1, col2, col3 = st.columns(3)
+    with col1:
+        st.metric("Latency", f"{result['latency_ms']:.0f}ms")
+    with col2:
+        st.metric("Chunks Used", result['chunks_used'])
+    with col3:
+        st.metric("Method", result['method'])
+
+    st.divider()
+
+    # Answer
+    st.subheader("Answer")
+    st.markdown(result['answer'])
+
+    # Citations
+    if result.get('citations'):
+        st.subheader("Sources")
+        for i, citation in enumerate(result['citations'], 1):
+            with st.expander(f"[{i}] {citation['title']}"):
+                st.markdown(f"**Section:** {citation['section']}")
+                st.markdown(f"**URL:** [{citation['url']}]({citation['url']})")
+
+
 def main():
     """Main Streamlit app."""
     st.title("🔍 reRankQ")
-    st.subtitle("Hybrid Search & RAG with Evaluation")
+    st.caption("Hybrid Search & RAG with Evaluation")
     
     # Sidebar
     with st.sidebar:
@@ -120,7 +145,10 @@ def main():
                 
                 if result:
                     st.session_state.current_result = result
-                    st.rerun()
+                    # Show the answer right here: the Results tab is a separate
+                    # view, so leaving it only there looks like no response.
+                    st.divider()
+                    render_result(result)
             else:
                 st.warning("Please enter a query")
     
@@ -128,30 +156,7 @@ def main():
         st.header("Search Results")
         
         if "current_result" in st.session_state:
-            result = st.session_state.current_result
-            
-            # Metrics row
-            col1, col2, col3 = st.columns(3)
-            with col1:
-                st.metric("Latency", f"{result['latency_ms']:.0f}ms")
-            with col2:
-                st.metric("Chunks Used", result['chunks_used'])
-            with col3:
-                st.metric("Method", result['method'])
-            
-            st.divider()
-            
-            # Answer
-            st.subheader("Answer")
-            st.markdown(result['answer'])
-            
-            # Citations
-            if result.get('citations'):
-                st.subheader("Sources")
-                for i, citation in enumerate(result['citations'], 1):
-                    with st.expander(f"[{i}] {citation['title']}"):
-                        st.markdown(f"**Section:** {citation['section']}")
-                        st.markdown(f"**URL:** [{citation['url']}]({citation['url']})")
+            render_result(st.session_state.current_result)
         else:
             st.info("Enter a query to see results")
     
@@ -180,7 +185,7 @@ def main():
                             "nDCG@5": f"{method_data['ndcg_at_k'].get(5, 0):.4f}",
                         })
                 
-                st.dataframe(data, use_container_width=True)
+                st.dataframe(data, width="stretch")
         else:
             st.info("Run the ablation study to see evaluation results")
         

@@ -27,19 +27,50 @@ class BM25Retriever:
         self.chunks: list[Chunk] = []
         self.corpus_tokens: list[list[str]] = []
     
+    #: Word tokens keep underscores and internal hyphens, so identifiers like
+    #: ``payment_intent`` or ``payment-intent`` survive normalization.
+    TOKEN_PATTERN = re.compile(r"[A-Za-z0-9_]+(?:-[A-Za-z0-9_]+)*")
+    #: Splits CamelCase / snake_case / kebab-case compounds into sub-tokens.
+    COMPOUND_PATTERN = re.compile(r"[A-Z]+(?![a-z])|[A-Z][a-z0-9]*|[a-z0-9_]+")
+
     def _tokenize(self, text: str) -> list[str]:
-        """Simple whitespace + lowercasing tokenization."""
-        # Lowercase and split on whitespace
-        text = text.lower()
-        # Remove special characters but keep alphanumeric
-        text = re.sub(r'[^a-z0-9\s]', ' ', text)
-        # Split on whitespace
-        tokens = text.split()
+        """
+        Tokenize technical text without destroying its terminology.
+
+        Each word token is lowercased and kept whole (underscores and inner
+        hyphens included). Compounds additionally emit their parts, so
+        ``PaymentIntent`` also matches ``payment``/``intent`` and
+        ``2020-08-27`` also matches its numeric parts. The same routine is used
+        for documents and queries, so matches stay symmetric.
+        """
+        tokens: list[str] = []
+
+        for raw in self.TOKEN_PATTERN.findall(text):
+            lowered = raw.lower()
+            emitted = [lowered]
+
+            if "-" in raw:
+                emitted.extend(part.lower() for part in raw.split("-") if part)
+
+            parts = self.COMPOUND_PATTERN.findall(raw)
+            if len(parts) > 1:
+                emitted.extend(part.lower() for part in parts if part)
+
+            # Deduplicate per token so term frequencies are not inflated.
+            tokens.extend(dict.fromkeys(emitted))
+
         return tokens
     
     def _build_index(self) -> None:
         """Build BM25 index from chunks."""
         self.logger.info(f"Building BM25 index from {len(self.chunks)} chunks...")
+
+        if not self.chunks:
+            # An empty corpus is valid: retrieval simply returns no results.
+            self.corpus_tokens = []
+            self.bm25 = None
+            self.logger.warning("BM25 index not built: empty corpus")
+            return
         
         # Tokenize all chunks
         self.corpus_tokens = [self._tokenize(chunk.content) for chunk in self.chunks]
@@ -118,16 +149,20 @@ class BM25Retriever:
             List of dicts with chunk_id, score, and chunk metadata
         """
         if self.bm25 is None:
+            if not self.chunks:
+                return []
             raise RuntimeError("Index not built. Call index_chunks() or load_index() first.")
-        
+
         # Tokenize query
         query_tokens = self._tokenize(query)
-        
+        if not query_tokens:
+            return []
+
         # Get BM25 scores
         scores = self.bm25.get_scores(query_tokens)
-        
-        # Get top-k indices
-        top_k_indices = np.argsort(scores)[::-1][:top_k]
+
+        # Get top-k indices (stable sort keeps ties in corpus order)
+        top_k_indices = np.argsort(-scores, kind="stable")[:top_k]
         
         # Build results
         results = []

@@ -44,8 +44,10 @@ retrieval:
     top_k: 5  # Final results after reranking
 
 generation:
-  provider: "anthropic"  # or "openai"
-  model: "claude-3-5-sonnet-20241022"
+  # "groq" and "openai" both use the OpenAI-compatible chat API;
+  # Groq defaults to https://api.groq.com/openai/v1 and GROQ_API_KEY.
+  provider: "groq"  # or "anthropic"
+  model: "openai/gpt-oss-20b"
   max_tokens: 1024
   temperature: 0.1
 

@@ -68,3 +68,7 @@ results/*.md
 # Logs
 *.log
 logs/
+
+# Generated indexes in subfolders
+data/indexes/**
+!data/indexes/.gitkeep
