@@ -1,0 +1,462 @@
+{
+  "num_queries": 50,
+  "pool_candidates": 301,
+  "judged_candidates": 0,
+  "pending_candidates": 301,
+  "coverage": 0.0,
+  "fully_judged_queries": 0,
+  "queries_without_judgments": [
+    "q_001",
+    "q_002",
+    "q_003",
+    "q_004",
+    "q_005",
+    "q_006",
+    "q_007",
+    "q_008",
+    "q_009",
+    "q_010",
+    "q_011",
+    "q_012",
+    "q_013",
+    "q_014",
+    "q_015",
+    "q_016",
+    "q_017",
+    "q_018",
+    "q_019",
+    "q_020",
+    "q_021",
+    "q_022",
+    "q_023",
+    "q_024",
+    "q_025",
+    "q_026",
+    "q_027",
+    "q_028",
+    "q_029",
+    "q_030",
+    "q_031",
+    "q_032",
+    "q_033",
+    "q_034",
+    "q_035",
+    "q_036",
+    "q_037",
+    "q_038",
+    "q_039",
+    "q_040",
+    "q_041",
+    "q_042",
+    "q_043",
+    "q_044",
+    "q_045",
+    "q_046",
+    "q_047",
+    "q_048",
+    "q_049",
+    "q_050"
+  ],
+  "per_query": [
+    {
+      "query_id": "q_001",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_002",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_003",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_004",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_005",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_006",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_007",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_008",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_009",
+      "pool_size": 8,
+      "judged": 0,
+      "pending": 8,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_010",
+      "pool_size": 9,
+      "judged": 0,
+      "pending": 9,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_011",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_012",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_013",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_014",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_015",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_016",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_017",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_018",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_019",
+      "pool_size": 8,
+      "judged": 0,
+      "pending": 8,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_020",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_021",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_022",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_023",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_024",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_025",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_026",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_027",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_028",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_029",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_030",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_031",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_032",
+      "pool_size": 4,
+      "judged": 0,
+      "pending": 4,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_033",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_034",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_035",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_036",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_037",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_038",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_039",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_040",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_041",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_042",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_043",
+      "pool_size": 8,
+      "judged": 0,
+      "pending": 8,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_044",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_045",
+      "pool_size": 7,
+      "judged": 0,
+      "pending": 7,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_046",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_047",
+      "pool_size": 5,
+      "judged": 0,
+      "pending": 5,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_048",
+      "pool_size": 9,
+      "judged": 0,
+      "pending": 9,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_049",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    },
+    {
+      "query_id": "q_050",
+      "pool_size": 6,
+      "judged": 0,
+      "pending": 6,
+      "coverage": 0.0,
+      "fully_judged": false
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "not_executed",
+  "reason": "no human-approved queries: approved_queries.jsonl is empty. Generation evaluation only uses approved queries.",
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "query_version": "approved-e3b0c44298fc",
+  "created_at": "2026-11-15T13:06:01.829626+00:00"
+}

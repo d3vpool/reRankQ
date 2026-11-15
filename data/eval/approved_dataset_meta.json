@@ -1,0 +1,22 @@
+{
+  "approved_format_version": 1,
+  "approved_version": "approved-e3b0c44298fc",
+  "num_queries": 0,
+  "by_split": {
+    "dev": 0,
+    "test": 0
+  },
+  "by_category": {},
+  "stale_pool_count": 0,
+  "awaiting_human_review": true,
+  "review_counts": {
+    "candidate": 0,
+    "accepted": 0,
+    "rejected": 0,
+    "needs_revision": 0
+  },
+  "split_version": "split-f4a04d80",
+  "split_method": "group-doc-section-neardup",
+  "problems": [],
+  "note": "Only queries with review status 'accepted' are included. Relevance judgments are a separate task and are untouched."
+}

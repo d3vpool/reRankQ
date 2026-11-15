@@ -1,0 +1,15 @@
+{
+  "num_queries": 50,
+  "categories": {
+    "factual": 17,
+    "procedural": 17,
+    "conceptual": 16
+  },
+  "difficulty": {
+    "easy": 13,
+    "hard": 15,
+    "medium": 22
+  },
+  "avg_relevant_docs": 1.22,
+  "avg_relevant_chunks": 2.6
+}

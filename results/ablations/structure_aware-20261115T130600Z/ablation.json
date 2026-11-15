@@ -1,0 +1,134 @@
+{
+  "ablation_format_version": 1,
+  "strategy": "structure_aware",
+  "split": "dev",
+  "query_set": "candidates",
+  "descriptive": true,
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "query_version": "approved-e3b0c44298fc",
+  "split_version": "split-f4a04d80",
+  "variants": [
+    {
+      "dimension": "fusion",
+      "variant_id": "rrf_k60",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "rrf_k": 60
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "fusion",
+      "variant_id": "rrf_k10",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "rrf_k": 10
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "fusion",
+      "variant_id": "rrf_k30_weights_70_30",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "rrf_k": 30,
+        "bm25_weight": 0.7,
+        "dense_weight": 0.3
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "candidate_depth",
+      "variant_id": "candidates_10",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "bm25_candidates": 10,
+        "dense_candidates": 10
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "candidate_depth",
+      "variant_id": "candidates_20",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "bm25_candidates": 20,
+        "dense_candidates": 20
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "candidate_depth",
+      "variant_id": "candidates_40",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "overrides": {
+        "bm25_candidates": 40,
+        "dense_candidates": 40
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "rerank_depth",
+      "variant_id": "rerank_from_6",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rerank",
+      "overrides": {
+        "fusion_candidates": 6
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    },
+    {
+      "dimension": "rerank_depth",
+      "variant_id": "rerank_from_20",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rerank",
+      "overrides": {
+        "fusion_candidates": 20
+      },
+      "num_queries": 35,
+      "metrics": {
+        "status": "blocked",
+        "reason": "descriptive ablation: requires approved queries and complete judgments"
+      }
+    }
+  ],
+  "unsupported": {
+    "chunk_size": "chunk_size/chunk_overlap are fixed by the frozen chunk set and corpus manifest; changing them needs re-chunking and a new corpus snapshot, so no chunk-size ablation is reported here",
+    "bm25_k1_b": "BM25 k1/b are read from the index build configuration; varying them at query time would not reflect a real index, so they are not ablated"
+  },
+  "note": "Only development-split results may guide parameter choices. Unsupported dimensions are reported, not simulated."
+}

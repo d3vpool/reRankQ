@@ -1,0 +1,5 @@
+{
+  "status": "blocked",
+  "reason": "descriptive run on candidate queries: metrics require human-approved queries and complete human relevance judgments",
+  "num_queries": 50
+}

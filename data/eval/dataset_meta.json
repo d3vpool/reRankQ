@@ -1,0 +1,51 @@
+{
+  "dataset_format_version": 1,
+  "dataset_version": "ds-0d0ddd1f3776",
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "split_version": "split-f4a04d80",
+  "split_seed": 13,
+  "pool_depth": 3,
+  "systems": [
+    "bm25",
+    "dense",
+    "hybrid",
+    "hybrid_rerank"
+  ],
+  "strategies": [
+    "fixed_size",
+    "structure_aware"
+  ],
+  "num_documents": 30,
+  "num_queries": 50,
+  "num_candidates": 598,
+  "files": {
+    "corpus_manifest": "data/eval/corpus_manifest.json",
+    "queries": "data/eval/queries.jsonl",
+    "candidates": "data/eval/candidates.jsonl",
+    "candidate_provenance": "data/eval/candidate_provenance.jsonl",
+    "judgments": "data/eval/judgments.jsonl"
+  },
+  "notes": "Candidate queries and pooled candidates only. No human relevance judgments exist until they are recorded in judgments.jsonl.",
+  "split_method": "group-doc-section-neardup",
+  "split_file": "data/eval/split_assignment.json",
+  "num_query_groups": 12,
+  "query_groups": [
+    12,
+    10,
+    7,
+    6,
+    3,
+    3,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+  ],
+  "approved_version": "approved-e3b0c44298fc",
+  "approved_queries": 0,
+  "approved_file": "data/eval/approved_queries.jsonl",
+  "review_file": "data/eval/query_reviews.jsonl",
+  "stale_pools": []
+}

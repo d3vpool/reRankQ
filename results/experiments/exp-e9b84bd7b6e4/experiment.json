@@ -1,0 +1,45 @@
+{
+  "experiment_format_version": 1,
+  "experiment_id": "exp-e9b84bd7b6e4",
+  "created_at": "2026-11-15T13:01:54.565772+00:00",
+  "status": "completed_no_metrics",
+  "evaluation_status": "descriptive_only",
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "query_version": "approved-e3b0c44298fc",
+  "split_version": "split-f4a04d80",
+  "split": "all",
+  "query_set": "candidates",
+  "num_queries": 50,
+  "chunking_strategy": "fixed_size",
+  "retrieval_config": "dense",
+  "parameters": {
+    "top_k": 10,
+    "bm25": {
+      "k1": 1.5,
+      "b": 0.75
+    },
+    "hybrid": {
+      "method": "rrf",
+      "k": 60,
+      "bm25_weight": 0.5,
+      "dense_weight": 0.5
+    },
+    "reranking": {
+      "model_name": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+      "top_k": 5
+    }
+  },
+  "retrieval_overrides": {},
+  "embedding_model": "all-MiniLM-L6-v2",
+  "reranker_model": "cross-encoder/ms-marco-MiniLM-L-6-v2",
+  "random_seed": 13,
+  "top_k": 10,
+  "judgment_policy": "strict_topk",
+  "batch_id": "20261115T130150Z",
+  "dataset": {
+    "eval_dir": "data/eval",
+    "num_documents": 30,
+    "num_candidates": 598,
+    "num_judgments": 0
+  }
+}

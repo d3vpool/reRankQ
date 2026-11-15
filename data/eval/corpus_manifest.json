@@ -1,0 +1,298 @@
+{
+  "manifest_format_version": 1,
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "created_at": "2026-11-13T15:26:11.515308+00:00",
+  "source": "https://docs.stripe.com",
+  "num_documents": 30,
+  "documents": [
+    {
+      "doc_id": "0e7496622203",
+      "url": "https://docs.stripe.com/get-started/use-cases/invoices",
+      "title": "Send invoices to collect payments for an online business | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 10413,
+      "sha256": "bc6c143ce40d40be7b78d62f81b0558eaed1e8b4cdf6d96a1e8e93d81a83cf61"
+    },
+    {
+      "doc_id": "1791c64153c2",
+      "url": "https://docs.stripe.com/payments/paymentintents/lifecycle",
+      "title": "How Payment Intents and Setup Intents work | Stripe Documentation",
+      "section": "Payments",
+      "chars": 1655,
+      "sha256": "acbc17924cb432528266c912c00f10be0b509cd210c71f227b5d2365b8470f7e"
+    },
+    {
+      "doc_id": "1867355238c6",
+      "url": "https://docs.stripe.com/payments-api/tour",
+      "title": "Tour of the API | Stripe Documentation",
+      "section": "Payments Api",
+      "chars": 6415,
+      "sha256": "75b87767ec73e7a8fc73eda3066a2a572a13985981e6bffd57d69a884889b147"
+    },
+    {
+      "doc_id": "1e110cb92845",
+      "url": "https://docs.stripe.com/payments/checkout-sessions",
+      "title": "The Checkout Sessions API | Stripe Documentation",
+      "section": "Payments",
+      "chars": 2733,
+      "sha256": "fd4bfd95c82440c1e50fd0b3f44b6c7e34dea97d384cdb0a93630b03c392763c"
+    },
+    {
+      "doc_id": "1e85e47ce5d1",
+      "url": "https://docs.stripe.com/products-prices/overview",
+      "title": "Overview | Stripe Documentation",
+      "section": "Products Prices",
+      "chars": 514,
+      "sha256": "7f0b01a11f7f5646bc88ca3d8e7da4e47c66624ff21c964600854f7a210099c9"
+    },
+    {
+      "doc_id": "20c4695bcbb8",
+      "url": "https://docs.stripe.com/get-started",
+      "title": "Get started | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 1925,
+      "sha256": "1452db68c7791893abffcb62f9639a3c0c6e12e29e21f8a9f3391ff1f55b5c39"
+    },
+    {
+      "doc_id": "2671b3f92943",
+      "url": "https://docs.stripe.com/api/idempotent_requests",
+      "title": "Idempotent requests | Stripe API Reference",
+      "section": "Api",
+      "chars": 9822,
+      "sha256": "4e3285a6e01dbc8e05a8c5272b572e03e3b3e2fb573592b7266693381da159d9"
+    },
+    {
+      "doc_id": "29e4cf048d28",
+      "url": "https://docs.stripe.com/payments/older-apis",
+      "title": "Older payment APIs | Stripe Documentation",
+      "section": "Payments",
+      "chars": 1019,
+      "sha256": "ad4300427b822c81602a7f1fc103261864ead1655713e7a230487376b69aa45c"
+    },
+    {
+      "doc_id": "3ebf749d7d60",
+      "url": "https://docs.stripe.com/api/setup_intents",
+      "title": "Setup Intents | Stripe API Reference",
+      "section": "Api",
+      "chars": 16742,
+      "sha256": "062f7b8624ec536e4af00499ff564da89d38a40f09e0f8f469b48316f9c0c2f8"
+    },
+    {
+      "doc_id": "54d56c4adf4f",
+      "url": "https://docs.stripe.com/get-started/use-cases/in-person-payments",
+      "title": "Accept in-person payments for a direct retail business | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 9622,
+      "sha256": "63814d09cd2231447f9507d921025c97b01956e4e609bbb7f524e2dbf431b272"
+    },
+    {
+      "doc_id": "558988e386a1",
+      "url": "https://docs.stripe.com/",
+      "title": "Stripe Documentation",
+      "section": "Home",
+      "chars": 4951,
+      "sha256": "1a5f67d0a7472ae35df6b27598aea5ed368b8163b5d34f459baac175f5796e3f"
+    },
+    {
+      "doc_id": "5f0691e6e005",
+      "url": "https://docs.stripe.com/payments/payment-intents/verifying-status",
+      "title": "Payment status updates | Stripe Documentation",
+      "section": "Payments",
+      "chars": 10289,
+      "sha256": "b5bb3d201d9718a88ffd9c1c492e62540302d2b13fa674c8e2caf50bb3176137"
+    },
+    {
+      "doc_id": "71966306d7f8",
+      "url": "https://docs.stripe.com/get-started/account",
+      "title": "Stripe accounts | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 1114,
+      "sha256": "f4155d4476b4ee3c3f58880dd0c2eded19aa04395116de16f1e1d51fc9b7d026"
+    },
+    {
+      "doc_id": "73483a2cfe5a",
+      "url": "https://docs.stripe.com/strong-customer-authentication",
+      "title": "Strong Customer Authentication readiness | Stripe Documentation",
+      "section": "Strong Customer Authentication",
+      "chars": 10345,
+      "sha256": "b88bfb3d0e47203b4966e3be83458bc87ab7a54d4b58caa1a4fea482654b7ca3"
+    },
+    {
+      "doc_id": "823589c6dc6a",
+      "url": "https://docs.stripe.com/glossary",
+      "title": "Stripe Glossary | Stripe Documentation",
+      "section": "Glossary",
+      "chars": 44734,
+      "sha256": "e778e128079ecf0555053a971b5f10c9fb2acaea6f2b9151637c35e2dbdf331d"
+    },
+    {
+      "doc_id": "873ba514de63",
+      "url": "https://docs.stripe.com/get-started/use-cases/startup",
+      "title": "Accept simple payments for a startup | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 2264,
+      "sha256": "170db2ecac08f015213dc65d32e39944505b33f57c8a6353f62bfbc430478362"
+    },
+    {
+      "doc_id": "9cfd3dc94d50",
+      "url": "https://docs.stripe.com/payments/payment-intents",
+      "title": "The Payment Intents API | Stripe Documentation",
+      "section": "Payments",
+      "chars": 10482,
+      "sha256": "e87c549f1a9cab3622ce5fb4e6df4511902be028234ecb15811e80e26f49629f"
+    },
+    {
+      "doc_id": "a36e6062fa7e",
+      "url": "https://docs.stripe.com/get-started/data-migrations/overview",
+      "title": "Overview | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 3139,
+      "sha256": "b3b3bfc445451b803ae642be968dfdbeef0a9ae5dfe530ea5de8d98ef414160c"
+    },
+    {
+      "doc_id": "a3af5eea96c5",
+      "url": "https://docs.stripe.com/get-started/use-cases",
+      "title": "Common use cases | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 470,
+      "sha256": "5db2c948c61f8ae9ed67dbef6642bfe0172bbca143069456eeeeb8f4a7bae359"
+    },
+    {
+      "doc_id": "b01344b85e74",
+      "url": "https://docs.stripe.com/payments/payment-intents/asynchronous-capture",
+      "title": "Asynchronous capture | Stripe Documentation",
+      "section": "Payments",
+      "chars": 5963,
+      "sha256": "953f0c7243fa9cdb94031a71a3f005805b633acd336cd28a2f699aadf167d579"
+    },
+    {
+      "doc_id": "b11bccd7189a",
+      "url": "https://docs.stripe.com/payments/setup-intents",
+      "title": "The Setup Intents API | Stripe Documentation",
+      "section": "Payments",
+      "chars": 5607,
+      "sha256": "90068633cc11f25289feca2de83889ce7cc55769f08f34c6744b29a2991aa0a9"
+    },
+    {
+      "doc_id": "caac76c239a6",
+      "url": "https://docs.stripe.com/payments/payment-methods",
+      "title": "Payment Methods API | Stripe Documentation",
+      "section": "Payments",
+      "chars": 6252,
+      "sha256": "f17aec5531d06606225428a1f28cd735b657b65530cc4d19b569ec0128cbcd4a"
+    },
+    {
+      "doc_id": "d07d4502ff4a",
+      "url": "https://docs.stripe.com/quickstarts",
+      "title": "Quickstart guides | Stripe Documentation",
+      "section": "Quickstarts",
+      "chars": 430,
+      "sha256": "9e1aadb5c17121814d928c216513315a5d4f2a70142259c989914dce8a3ee149"
+    },
+    {
+      "doc_id": "d1a0647139b9",
+      "url": "https://docs.stripe.com/api/payment_intents",
+      "title": "Payment Intents | Stripe API Reference",
+      "section": "Api",
+      "chars": 22012,
+      "sha256": "0bd64ce20756badce86b65fd130e44cf9f2c2dbb16ca5bc748869b61a748f84e"
+    },
+    {
+      "doc_id": "d91bd5ca922e",
+      "url": "https://docs.stripe.com/api/payment_methods",
+      "title": "Payment Methods | Stripe API Reference",
+      "section": "Api",
+      "chars": 16930,
+      "sha256": "455a5bafec6e8302d6f6c7135ca60a03d51d80489c5224663a7e30c792f67289"
+    },
+    {
+      "doc_id": "e308caf524e4",
+      "url": "https://docs.stripe.com/get-started/use-cases/saas-subscriptions",
+      "title": "Sell subscriptions as a SaaS startup | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 13875,
+      "sha256": "dedf7ca284d4c8a194d1dbb248bbc685d12f9e2fca69aab98a43f48165822dc0"
+    },
+    {
+      "doc_id": "f20e053589b8",
+      "url": "https://docs.stripe.com/agents",
+      "title": "Agents and AI on Stripe | Stripe Documentation",
+      "section": "Agents",
+      "chars": 1851,
+      "sha256": "dfbb69dcd7dc8e3817577b52a398385452d53a1cef67245574b011a3bbc38569"
+    },
+    {
+      "doc_id": "f5b03db22f4a",
+      "url": "https://docs.stripe.com/no-code",
+      "title": "No-code options for using Stripe | Stripe Documentation",
+      "section": "No Code",
+      "chars": 1904,
+      "sha256": "3e6594677345695b35869c88e1a100562e7c094f022eaee027b0935e5e892fd7"
+    },
+    {
+      "doc_id": "f6de617de6f4",
+      "url": "https://docs.stripe.com/get-started/development-environment",
+      "title": "Set up your development environment | Stripe Documentation",
+      "section": "Get Started",
+      "chars": 6881,
+      "sha256": "069baac19725eecfd200bf5edfde29f0a4246e614653267516bb7e69b9a7a2d4"
+    },
+    {
+      "doc_id": "fbe98c146439",
+      "url": "https://docs.stripe.com/payments/payment-records",
+      "title": "The Payment Records API | Stripe Documentation",
+      "section": "Payments",
+      "chars": 11912,
+      "sha256": "4867d300604b261f7dda7bc444ba275500a73cd2aaa643e2fcf36ae81b882344"
+    }
+  ],
+  "chunking_config": {
+    "fixed_size": {
+      "chunk_size": 512,
+      "chunk_overlap": 50
+    },
+    "structure_aware": {
+      "max_chunk_size": 512,
+      "min_chunk_size": 100,
+      "respect_headers": true
+    }
+  },
+  "chunks": {
+    "fixed_size": {
+      "num_chunks": 144,
+      "chunk_ids_sha256": "5ea30878c03480bac1fc2fadc8dc214e7bd2261b33a0bf660abbb02b703d182a",
+      "chunk_file": "data/processed/chunks_fixed_size.jsonl",
+      "index_dir": "data/indexes/fixed_size",
+      "config": {
+        "chunk_size": 512,
+        "chunk_overlap": 50
+      }
+    },
+    "structure_aware": {
+      "num_chunks": 222,
+      "chunk_ids_sha256": "67cf1ddef1bea9ec2828280c906ed39958c7c3720d71bccd8f19ad0ac496e7ed",
+      "chunk_file": "data/processed/chunks_structure_aware.jsonl",
+      "index_dir": "data/indexes/structure_aware",
+      "config": {
+        "max_chunk_size": 512,
+        "min_chunk_size": 100,
+        "respect_headers": true
+      }
+    }
+  },
+  "embedding_model": "all-MiniLM-L6-v2",
+  "tokenizer": {
+    "name": "cl100k_base",
+    "library": "tiktoken"
+  },
+  "software": {
+    "python": "3.12.3",
+    "platform": "Linux-7.0.0-43-generic-x86_64-with-glibc2.39",
+    "pydantic": "2.14.3",
+    "tiktoken": "0.14.0",
+    "faiss-cpu": "1.16.0",
+    "rank-bm25": "0.2.2",
+    "sentence-transformers": "6.3.0",
+    "numpy": "2.5.4"
+  }
+}

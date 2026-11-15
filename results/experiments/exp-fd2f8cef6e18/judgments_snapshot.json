@@ -1,0 +1,5 @@
+{
+  "num_judged_pairs": 0,
+  "strategy": "structure_aware",
+  "policy": "strict_topk"
+}

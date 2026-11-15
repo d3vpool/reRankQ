@@ -1,0 +1,11 @@
+{
+  "count": 50,
+  "mean_ms": 2.71,
+  "median_ms": 2.7,
+  "stdev_ms": 0.113,
+  "p50_ms": 2.7,
+  "p95_ms": 2.839,
+  "min_ms": 2.575,
+  "max_ms": 3.343,
+  "index_initialisation_seconds": 1.091000740416348e-06
+}

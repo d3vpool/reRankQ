@@ -1,0 +1,70 @@
+{
+  "batch_id": "20261115T130150Z",
+  "created_at": "2026-11-15T13:02:10.601803+00:00",
+  "query_set": "candidates",
+  "split": "all",
+  "descriptive": true,
+  "corpus_version": "corpus-fde4c9c42bf3",
+  "query_version": "approved-e3b0c44298fc",
+  "split_version": "split-f4a04d80",
+  "num_configurations": 8,
+  "num_queries": 50,
+  "experiments": [
+    {
+      "experiment_id": "exp-94c192d7bfa8",
+      "chunking_strategy": "fixed_size",
+      "retrieval_config": "bm25",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-e9b84bd7b6e4",
+      "chunking_strategy": "fixed_size",
+      "retrieval_config": "dense",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-6252da48b320",
+      "chunking_strategy": "fixed_size",
+      "retrieval_config": "hybrid_rrf",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-85c2acd5ddaa",
+      "chunking_strategy": "fixed_size",
+      "retrieval_config": "hybrid_rerank",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-0df599a032a0",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "bm25",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-c20b2c12f9cf",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "dense",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-fd2f8cef6e18",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rrf",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    },
+    {
+      "experiment_id": "exp-b78617849cf1",
+      "chunking_strategy": "structure_aware",
+      "retrieval_config": "hybrid_rerank",
+      "num_evaluated": null,
+      "metrics_status": "blocked"
+    }
+  ]
+}

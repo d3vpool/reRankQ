@@ -1,0 +1,595 @@
+{
+  "split_method_in_data": "leaky",
+  "num_queries": 50,
+  "by_split": {
+    "dev": 37,
+    "test": 13
+  },
+  "by_category_split": {
+    "dev": {
+      "terminology": 8,
+      "conceptual": 8,
+      "api_usage": 8,
+      "procedural": 5,
+      "troubleshooting": 4,
+      "contextual": 4
+    },
+    "test": {
+      "terminology": 3,
+      "conceptual": 2,
+      "api_usage": 2,
+      "procedural": 2,
+      "troubleshooting": 2,
+      "contextual": 2
+    }
+  },
+  "num_groups": 12,
+  "group_sizes": [
+    12,
+    10,
+    7,
+    6,
+    3,
+    3,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+  ],
+  "groups_spanning_splits": [
+    {
+      "group_id": "grp_6b702413",
+      "size": 12,
+      "query_ids": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_018",
+        "q_019",
+        "q_025",
+        "q_029",
+        "q_036",
+        "q_041",
+        "q_043",
+        "q_048"
+      ],
+      "dev": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_025",
+        "q_041",
+        "q_043"
+      ],
+      "test": [
+        "q_018",
+        "q_019",
+        "q_029",
+        "q_036",
+        "q_048"
+      ]
+    },
+    {
+      "group_id": "grp_fa8a07dd",
+      "size": 10,
+      "query_ids": [
+        "q_008",
+        "q_022",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_038",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "dev": [
+        "q_008",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "test": [
+        "q_022",
+        "q_038"
+      ]
+    },
+    {
+      "group_id": "grp_19fa3c76",
+      "size": 7,
+      "query_ids": [
+        "q_002",
+        "q_011",
+        "q_020",
+        "q_026",
+        "q_028",
+        "q_035",
+        "q_042"
+      ],
+      "dev": [
+        "q_011",
+        "q_020",
+        "q_026",
+        "q_028",
+        "q_042"
+      ],
+      "test": [
+        "q_002",
+        "q_035"
+      ]
+    },
+    {
+      "group_id": "grp_7ac6ed0d",
+      "size": 6,
+      "query_ids": [
+        "q_005",
+        "q_015",
+        "q_021",
+        "q_030",
+        "q_039",
+        "q_040"
+      ],
+      "dev": [
+        "q_015",
+        "q_021",
+        "q_030",
+        "q_039",
+        "q_040"
+      ],
+      "test": [
+        "q_005"
+      ]
+    },
+    {
+      "group_id": "grp_52ce4414",
+      "size": 2,
+      "query_ids": [
+        "q_006",
+        "q_016"
+      ],
+      "dev": [
+        "q_006"
+      ],
+      "test": [
+        "q_016"
+      ]
+    },
+    {
+      "group_id": "grp_f5de15d8",
+      "size": 2,
+      "query_ids": [
+        "q_031",
+        "q_047"
+      ],
+      "dev": [
+        "q_031"
+      ],
+      "test": [
+        "q_047"
+      ]
+    }
+  ],
+  "shared_documents": [
+    {
+      "doc_id": "0e7496622203",
+      "dev": [
+        "q_008",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "test": [
+        "q_022",
+        "q_038"
+      ],
+      "dev_count": 8,
+      "test_count": 2
+    },
+    {
+      "doc_id": "1791c64153c2",
+      "dev": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_025",
+        "q_041",
+        "q_043"
+      ],
+      "test": [
+        "q_018",
+        "q_019",
+        "q_029",
+        "q_036",
+        "q_048"
+      ],
+      "dev_count": 7,
+      "test_count": 5
+    },
+    {
+      "doc_id": "1867355238c6",
+      "dev": [
+        "q_015",
+        "q_021",
+        "q_030",
+        "q_039",
+        "q_040"
+      ],
+      "test": [
+        "q_005"
+      ],
+      "dev_count": 5,
+      "test_count": 1
+    },
+    {
+      "doc_id": "29e4cf048d28",
+      "dev": [
+        "q_031"
+      ],
+      "test": [
+        "q_047"
+      ],
+      "dev_count": 1,
+      "test_count": 1
+    },
+    {
+      "doc_id": "3ebf749d7d60",
+      "dev": [
+        "q_011",
+        "q_020",
+        "q_026",
+        "q_028",
+        "q_042"
+      ],
+      "test": [
+        "q_002",
+        "q_035"
+      ],
+      "dev_count": 5,
+      "test_count": 2
+    },
+    {
+      "doc_id": "fbe98c146439",
+      "dev": [
+        "q_006"
+      ],
+      "test": [
+        "q_016"
+      ],
+      "dev_count": 1,
+      "test_count": 1
+    }
+  ],
+  "shared_sections": [
+    {
+      "section": "How Payment Intents and Setup Intents work",
+      "dev": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_025",
+        "q_041",
+        "q_043"
+      ],
+      "test": [
+        "q_018",
+        "q_019",
+        "q_029",
+        "q_036",
+        "q_048"
+      ],
+      "dev_count": 7,
+      "test_count": 5
+    },
+    {
+      "section": "Older payment APIs",
+      "dev": [
+        "q_031"
+      ],
+      "test": [
+        "q_047"
+      ],
+      "dev_count": 1,
+      "test_count": 1
+    },
+    {
+      "section": "Send invoices to collect payments for an online business",
+      "dev": [
+        "q_008",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "test": [
+        "q_022"
+      ],
+      "dev_count": 8,
+      "test_count": 1
+    },
+    {
+      "section": "The Payment Records API",
+      "dev": [
+        "q_006"
+      ],
+      "test": [
+        "q_016"
+      ],
+      "dev_count": 1,
+      "test_count": 1
+    },
+    {
+      "section": "The SetupIntent objectv1",
+      "dev": [
+        "q_011",
+        "q_020",
+        "q_042"
+      ],
+      "test": [
+        "q_002"
+      ],
+      "dev_count": 3,
+      "test_count": 1
+    },
+    {
+      "section": "The SetupIntent objectv1 > Attributes",
+      "dev": [
+        "q_026",
+        "q_028"
+      ],
+      "test": [
+        "q_035"
+      ],
+      "dev_count": 2,
+      "test_count": 1
+    },
+    {
+      "section": "Tour of the API > Core concepts",
+      "dev": [
+        "q_021"
+      ],
+      "test": [
+        "q_005"
+      ],
+      "dev_count": 1,
+      "test_count": 1
+    }
+  ],
+  "exact_duplicates_across_splits": [],
+  "near_duplicates_across_splits": [
+    {
+      "query_ids": [
+        "q_005",
+        "q_021"
+      ],
+      "queries": [
+        "What is a PaymentMethod object?",
+        "How do I retrieve a PaymentMethod object?"
+      ],
+      "similarity": 0.667,
+      "splits": [
+        "test",
+        "dev"
+      ]
+    }
+  ],
+  "near_duplicate_threshold": 0.6,
+  "leakage_found": true,
+  "summary": "6 of 12 query groups span both splits; 6 documents and 7 sections are shared; 0 duplicate and 1 near-duplicate query pairs cross the split.",
+  "groups": [
+    {
+      "group_id": "grp_6b702413",
+      "query_ids": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_018",
+        "q_019",
+        "q_025",
+        "q_029",
+        "q_036",
+        "q_041",
+        "q_043",
+        "q_048"
+      ],
+      "doc_ids": [
+        "1791c64153c2"
+      ],
+      "sections": [
+        "How Payment Intents and Setup Intents work"
+      ],
+      "size": 12
+    },
+    {
+      "group_id": "grp_fa8a07dd",
+      "query_ids": [
+        "q_008",
+        "q_022",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_038",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "doc_ids": [
+        "0e7496622203"
+      ],
+      "sections": [
+        "Send invoices to collect payments for an online business",
+        "Send invoices to collect payments for an online business > Configure payment collection settings"
+      ],
+      "size": 10
+    },
+    {
+      "group_id": "grp_19fa3c76",
+      "query_ids": [
+        "q_002",
+        "q_011",
+        "q_020",
+        "q_026",
+        "q_028",
+        "q_035",
+        "q_042"
+      ],
+      "doc_ids": [
+        "3ebf749d7d60"
+      ],
+      "sections": [
+        "The SetupIntent objectv1",
+        "The SetupIntent objectv1 > Attributes"
+      ],
+      "size": 7
+    },
+    {
+      "group_id": "grp_7ac6ed0d",
+      "query_ids": [
+        "q_005",
+        "q_015",
+        "q_021",
+        "q_030",
+        "q_039",
+        "q_040"
+      ],
+      "doc_ids": [
+        "1867355238c6"
+      ],
+      "sections": [
+        "Tour of the API",
+        "Tour of the API > Core concepts"
+      ],
+      "size": 6
+    },
+    {
+      "group_id": "grp_0dea446a",
+      "query_ids": [
+        "q_003",
+        "q_013",
+        "q_023"
+      ],
+      "doc_ids": [
+        "9cfd3dc94d50"
+      ],
+      "sections": [
+        "The Payment Intents API"
+      ],
+      "size": 3
+    },
+    {
+      "group_id": "grp_2a510821",
+      "query_ids": [
+        "q_004",
+        "q_012",
+        "q_032"
+      ],
+      "doc_ids": [
+        "b01344b85e74"
+      ],
+      "sections": [
+        "Asynchronous capture"
+      ],
+      "size": 3
+    },
+    {
+      "group_id": "grp_02b1f33e",
+      "query_ids": [
+        "q_007",
+        "q_024"
+      ],
+      "doc_ids": [
+        "1e110cb92845"
+      ],
+      "sections": [
+        "The Checkout Sessions API"
+      ],
+      "size": 2
+    },
+    {
+      "group_id": "grp_52ce4414",
+      "query_ids": [
+        "q_006",
+        "q_016"
+      ],
+      "doc_ids": [
+        "fbe98c146439"
+      ],
+      "sections": [
+        "The Payment Records API"
+      ],
+      "size": 2
+    },
+    {
+      "group_id": "grp_f5de15d8",
+      "query_ids": [
+        "q_031",
+        "q_047"
+      ],
+      "doc_ids": [
+        "29e4cf048d28"
+      ],
+      "sections": [
+        "Older payment APIs"
+      ],
+      "size": 2
+    },
+    {
+      "group_id": "grp_5720275b",
+      "query_ids": [
+        "q_034"
+      ],
+      "doc_ids": [
+        "20c4695bcbb8"
+      ],
+      "sections": [
+        "Get started"
+      ],
+      "size": 1
+    },
+    {
+      "group_id": "grp_89bd7a6d",
+      "query_ids": [
+        "q_009"
+      ],
+      "doc_ids": [
+        "54d56c4adf4f"
+      ],
+      "sections": [
+        "Accept in-person payments for a direct retail business"
+      ],
+      "size": 1
+    },
+    {
+      "group_id": "grp_cab55f2a",
+      "query_ids": [
+        "q_045"
+      ],
+      "doc_ids": [
+        "823589c6dc6a"
+      ],
+      "sections": [
+        "Stripe Glossary"
+      ],
+      "size": 1
+    }
+  ]
+}

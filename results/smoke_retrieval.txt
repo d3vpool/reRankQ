@@ -1,0 +1,210 @@
+Indexing 222 chunks from data/processed (structure_aware)
+{"timestamp": "2026-11-13T13:32:24.452484", "level": "INFO", "logger": "rerankq", "message": "Building BM25 index from 222 chunks..."}
+{"timestamp": "2026-11-13T13:32:24.487513", "level": "INFO", "logger": "rerankq", "message": "BM25 index built successfully"}
+{"timestamp": "2026-11-13T13:32:24.487582", "level": "INFO", "logger": "rerankq", "message": "Building FAISS index from 222 chunks..."}
+{"timestamp": "2026-11-13T13:32:24.487593", "level": "INFO", "logger": "rerankq", "message": "Building FAISS index from 222 chunks..."}
+{"timestamp": "2026-11-13T13:32:27.572366", "level": "INFO", "logger": "rerankq", "message": "Loading embedding model: all-MiniLM-L6-v2"}
+{"timestamp": "2026-11-13T13:32:27.572409", "level": "INFO", "logger": "rerankq", "message": "Loading embedding model: all-MiniLM-L6-v2"}
+{"timestamp": "2026-11-13T13:32:29.121349", "level": "INFO", "logger": "rerankq", "message": "Embedding model loaded"}
+{"timestamp": "2026-11-13T13:32:29.121393", "level": "INFO", "logger": "rerankq", "message": "Embedding model loaded"}
+{"timestamp": "2026-11-13T13:32:29.767259", "level": "INFO", "logger": "rerankq", "message": "FAISS index built with dimension 384"}
+{"timestamp": "2026-11-13T13:32:29.767298", "level": "INFO", "logger": "rerankq", "message": "FAISS index built with dimension 384"}
+{"timestamp": "2026-11-13T13:32:29.774160", "level": "INFO", "logger": "rerankq", "message": "Saved BM25 index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.774207", "level": "INFO", "logger": "rerankq", "message": "Saved BM25 index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.774216", "level": "INFO", "logger": "rerankq", "message": "Saved BM25 index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778174", "level": "INFO", "logger": "rerankq", "message": "Saved dense index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778190", "level": "INFO", "logger": "rerankq", "message": "Saved dense index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778198", "level": "INFO", "logger": "rerankq", "message": "Saved dense index to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778372", "level": "INFO", "logger": "rerankq", "message": "Saved hybrid indexes to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778384", "level": "INFO", "logger": "rerankq", "message": "Saved hybrid indexes to data/indexes"}
+{"timestamp": "2026-11-13T13:32:29.778391", "level": "INFO", "logger": "rerankq", "message": "Saved hybrid indexes to data/indexes"}
+Saved indexes to data/indexes
+Manifest: 222 chunks, all-MiniLM-L6-v2, strategies=['structure_aware']
+
+==============================================================================
+QUERY: How do I create a payment intent?
+==============================================================================
+
+A. BM25 only
+  1. [0e56f88fbaab] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API ### An integration is made out of cooperating objects To accept a payment, a system needs to create seve...
+  2. [2da263c64222] No-code options for using Stripe | Stripe Documentation <https://docs.stripe.com/no-code>
+     No-code options for using Stripe ## Get started without writing any code. Learn which Stripe features are best for your ...
+  3. [9ed09b8a066c] Strong Customer Authentication readiness | Stripe Documentation <https://docs.stripe.com/strong-customer-authentication>
+     Strong Customer Authentication readiness > SCA enforcement ### Understand incomplete, declined or failed payments Paymen...
+
+B. Dense only
+  1. [e592a3e7a483] How Payment Intents and Setup Intents work | Stripe Documentation <https://docs.stripe.com/payments/paymentintents/lifecycle>
+     How Payment Intents and Setup Intents work ## Learn about the lifecycle of Payment and Setup Intents. You use thePayment...
+  2. [27e623022a10] Payment Intents | Stripe API Reference <https://docs.stripe.com/api/payment_intents>
+     # Payment Intentsv1 A PaymentIntent guides you through the process of collecting a payment from your customer.We recomme...
+  3. [2452a63726f1] The Payment Intents API | Stripe Documentation <https://docs.stripe.com/payments/payment-intents>
+     The Payment Intents API ## Learn how to use the Payment Intents API for Stripe payments. Use thePayment IntentsAPI to bu...
+
+C. Hybrid RRF
+  1. [7bf0ad1b5980] The Setup Intents API | Stripe Documentation <https://docs.stripe.com/payments/setup-intents>
+     The Setup Intents API ## Saving and reusing payment methods The Setup Intents API is useful for businesses that onboard ...
+  2. [183da919dd91] The Payment Intents API | Stripe Documentation <https://docs.stripe.com/payments/payment-intents>
+     The Payment Intents API ## Creating a PaymentIntent To get started, see theaccept a payment guide. It describes how to c...
+  3. [0e56f88fbaab] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API ### An integration is made out of cooperating objects To accept a payment, a system needs to create seve...
+{"timestamp": "2026-11-13T13:32:29.823932", "level": "INFO", "logger": "rerankq", "message": "Loading cross-encoder model: cross-encoder/ms-marco-MiniLM-L-6-v2"}
+{"timestamp": "2026-11-13T13:32:29.823960", "level": "INFO", "logger": "rerankq", "message": "Loading cross-encoder model: cross-encoder/ms-marco-MiniLM-L-6-v2"}
+{"timestamp": "2026-11-13T13:32:29.823971", "level": "INFO", "logger": "rerankq", "message": "Loading cross-encoder model: cross-encoder/ms-marco-MiniLM-L-6-v2"}
+{"timestamp": "2026-11-13T13:32:29.823979", "level": "INFO", "logger": "rerankq", "message": "Loading cross-encoder model: cross-encoder/ms-marco-MiniLM-L-6-v2"}
+{"timestamp": "2026-11-13T13:32:31.999215", "level": "INFO", "logger": "rerankq", "message": "Cross-encoder model loaded"}
+{"timestamp": "2026-11-13T13:32:31.999257", "level": "INFO", "logger": "rerankq", "message": "Cross-encoder model loaded"}
+{"timestamp": "2026-11-13T13:32:31.999267", "level": "INFO", "logger": "rerankq", "message": "Cross-encoder model loaded"}
+{"timestamp": "2026-11-13T13:32:31.999274", "level": "INFO", "logger": "rerankq", "message": "Cross-encoder model loaded"}
+
+D. Hybrid RRF + cross-encoder rerank
+  1. [183da919dd91] The Payment Intents API | Stripe Documentation <https://docs.stripe.com/payments/payment-intents>
+     The Payment Intents API ## Creating a PaymentIntent To get started, see theaccept a payment guide. It describes how to c...
+  2. [e592a3e7a483] How Payment Intents and Setup Intents work | Stripe Documentation <https://docs.stripe.com/payments/paymentintents/lifecycle>
+     How Payment Intents and Setup Intents work ## Learn about the lifecycle of Payment and Setup Intents. You use thePayment...
+  3. [27e623022a10] Payment Intents | Stripe API Reference <https://docs.stripe.com/api/payment_intents>
+     # Payment Intentsv1 A PaymentIntent guides you through the process of collecting a payment from your customer.We recomme...
+
+==============================================================================
+QUERY: What is an idempotency key used for?
+==============================================================================
+
+A. BM25 only
+  1. [133eef90e9f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests The API supportsidempotencyfor safely retrying requests without accidentally performing the same o...
+  2. [2de3956840f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests ``` curlhttps://api.stripe.com/v1/customers \-usk_test_...sk_test_...: \-H"Idempotency-Key: KG5Lxw...
+  3. [c08afa2ca20e] Payment Intents | Stripe API Reference <https://docs.stripe.com/api/payment_intents>
+     The PaymentIntent objectv1 > Attributes #### next_actionnullableobjectretrievable with publishable key If present, this ...
+
+B. Dense only
+  1. [d8a02eeea4b2] Payment Methods | Stripe API Reference <https://docs.stripe.com/api/payment_methods>
+     The PaymentMethod objectv1 > Attributes #### customernullablestringExpandable The ID of the Customer to which this Payme...
+  2. [133eef90e9f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests The API supportsidempotencyfor safely retrying requests without accidentally performing the same o...
+  3. [61466b9bac14] Setup Intents | Stripe API Reference <https://docs.stripe.com/api/setup_intents>
+     Create a SetupIntentv1 > Parameters #### descriptionstring An arbitrary string attached to the object. Often useful for ...
+
+C. Hybrid RRF
+  1. [133eef90e9f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests The API supportsidempotencyfor safely retrying requests without accidentally performing the same o...
+  2. [c08afa2ca20e] Payment Intents | Stripe API Reference <https://docs.stripe.com/api/payment_intents>
+     The PaymentIntent objectv1 > Attributes #### next_actionnullableobjectretrievable with publishable key If present, this ...
+  3. [2b9039f0bc96] Setup Intents | Stripe API Reference <https://docs.stripe.com/api/setup_intents>
+     The SetupIntent objectv1 > Attributes #### next_actionnullableobjectretrievable with publishable key If present, this pr...
+
+D. Hybrid RRF + cross-encoder rerank
+  1. [133eef90e9f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests The API supportsidempotencyfor safely retrying requests without accidentally performing the same o...
+  2. [2de3956840f6] Idempotent requests | Stripe API Reference <https://docs.stripe.com/api/idempotent_requests>
+     # Idempotent requests ``` curlhttps://api.stripe.com/v1/customers \-usk_test_...sk_test_...: \-H"Idempotency-Key: KG5Lxw...
+  3. [2b9039f0bc96] Setup Intents | Stripe API Reference <https://docs.stripe.com/api/setup_intents>
+     The SetupIntent objectv1 > Attributes #### next_actionnullableobjectretrievable with publishable key If present, this pr...
+
+==============================================================================
+QUERY: How do I verify a webhook signature?
+==============================================================================
+
+A. BM25 only
+  1. [fdac1f9094a2] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution You can use polling instead of webhooks to m...
+  2. [af900b69848b] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions ### Set up a webhook endpoint Create a webhook endpoin...
+  3. [956f56c06784] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution When payment is unsuccessful, you can find m...
+
+B. Dense only
+  1. [af900b69848b] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions ### Set up a webhook endpoint Create a webhook endpoin...
+  2. [956f56c06784] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution When payment is unsuccessful, you can find m...
+  3. [4a110197361b] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     # PaymentIntent Object{"id":"pi_123","object":"payment_intent","capture_method":"automatic_async","status":"succeeded","...
+
+C. Hybrid RRF
+  1. [af900b69848b] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions ### Set up a webhook endpoint Create a webhook endpoin...
+  2. [956f56c06784] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution When payment is unsuccessful, you can find m...
+  3. [fdac1f9094a2] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution You can use polling instead of webhooks to m...
+
+D. Hybrid RRF + cross-encoder rerank
+  1. [af900b69848b] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions ### Set up a webhook endpoint Create a webhook endpoin...
+  2. [fdac1f9094a2] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution You can use polling instead of webhooks to m...
+  3. [956f56c06784] Payment status updates | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/verifying-status>
+     Payment status updates > Monitor a PaymentIntent with webhooks #### Caution When payment is unsuccessful, you can find m...
+
+==============================================================================
+QUERY: How does a subscription lifecycle behave when a payment fails?
+==============================================================================
+
+A. BM25 only
+  1. [f1efb84a738f] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API ### Processing and success The intent’s state is nowprocessing, and at this point Stripe attempts to pro...
+  2. [e93701967fe4] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ### Add a customer portal Your customers manage their existing subscriptions and in...
+  3. [e8349cad9905] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API > The path to a payment ### Payment methods A PaymentIntent starts with the statusrequires_payment_metho...
+
+B. Dense only
+  1. [01688c57c29a] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions #### Note Thecheckout.session.completedevent tells you...
+  2. [f93526c614e0] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ## Next steps After setting up your integration, we recommend that you implement th...
+  3. [e93701967fe4] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ### Add a customer portal Your customers manage their existing subscriptions and in...
+
+C. Hybrid RRF
+  1. [01688c57c29a] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup > Monitor your subscriptions #### Note Thecheckout.session.completedevent tells you...
+  2. [e93701967fe4] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ### Add a customer portal Your customers manage their existing subscriptions and in...
+  3. [7dbd6b434507] The Payment Records API | Stripe Documentation <https://docs.stripe.com/payments/payment-records>
+     The Payment Records API ## Create and manage PaymentRecords A PaymentRecord is the record of a payment, and includes all...
+
+D. Hybrid RRF + cross-encoder rerank
+  1. [f93526c614e0] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ## Next steps After setting up your integration, we recommend that you implement th...
+  2. [7dbd6b434507] The Payment Records API | Stripe Documentation <https://docs.stripe.com/payments/payment-records>
+     The Payment Records API ## Create and manage PaymentRecords A PaymentRecord is the record of a payment, and includes all...
+  3. [e93701967fe4] Sell subscriptions as a SaaS startup | Stripe Documentation <https://docs.stripe.com/get-started/use-cases/saas-subscriptions>
+     Sell subscriptions as a SaaS startup ### Add a customer portal Your customers manage their existing subscriptions and in...
+
+==============================================================================
+QUERY: How does asynchronous capture work?
+==============================================================================
+
+A. BM25 only
+  1. [d0985f6922a6] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Use Asynchronous Capture to enable faster PaymentIntent confirmations. Asynchronous capture redu...
+  2. [0c07b6ac43d4] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Opt in to asynchronous capture To upgrade your existing integration and add support for asynchro...
+  3. [f1efb84a738f] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API ### Processing and success The intent’s state is nowprocessing, and at this point Stripe attempts to pro...
+
+B. Dense only
+  1. [d0985f6922a6] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Use Asynchronous Capture to enable faster PaymentIntent confirmations. Asynchronous capture redu...
+  2. [0c07b6ac43d4] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Opt in to asynchronous capture To upgrade your existing integration and add support for asynchro...
+  3. [4a110197361b] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     # PaymentIntent Object{"id":"pi_123","object":"payment_intent","capture_method":"automatic_async","status":"succeeded","...
+
+C. Hybrid RRF
+  1. [d0985f6922a6] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Use Asynchronous Capture to enable faster PaymentIntent confirmations. Asynchronous capture redu...
+  2. [0c07b6ac43d4] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Opt in to asynchronous capture To upgrade your existing integration and add support for asynchro...
+  3. [f1efb84a738f] Tour of the API | Stripe Documentation <https://docs.stripe.com/payments-api/tour>
+     Tour of the API ### Processing and success The intent’s state is nowprocessing, and at this point Stripe attempts to pro...
+
+D. Hybrid RRF + cross-encoder rerank
+  1. [d0985f6922a6] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Use Asynchronous Capture to enable faster PaymentIntent confirmations. Asynchronous capture redu...
+  2. [0c07b6ac43d4] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     Asynchronous capture ## Opt in to asynchronous capture To upgrade your existing integration and add support for asynchro...
+  3. [4a110197361b] Asynchronous capture | Stripe Documentation <https://docs.stripe.com/payments/payment-intents/asynchronous-capture>
+     # PaymentIntent Object{"id":"pi_123","object":"payment_intent","capture_method":"automatic_async","status":"succeeded","...

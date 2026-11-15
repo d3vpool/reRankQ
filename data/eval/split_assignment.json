@@ -1,0 +1,358 @@
+{
+  "split_method": "group-doc-section-neardup",
+  "split_version": "split-f4a04d80",
+  "split_seed": 13,
+  "test_fraction_target": 0.25,
+  "near_dup_threshold": 0.8,
+  "num_queries": 50,
+  "num_groups": 12,
+  "group_sizes": [
+    12,
+    10,
+    7,
+    6,
+    3,
+    3,
+    2,
+    2,
+    2,
+    1,
+    1,
+    1
+  ],
+  "groups": [
+    {
+      "group_id": "grp_6b702413",
+      "query_ids": [
+        "q_001",
+        "q_010",
+        "q_014",
+        "q_017",
+        "q_018",
+        "q_019",
+        "q_025",
+        "q_029",
+        "q_036",
+        "q_041",
+        "q_043",
+        "q_048"
+      ],
+      "doc_ids": [
+        "1791c64153c2"
+      ],
+      "sections": [
+        "How Payment Intents and Setup Intents work"
+      ],
+      "size": 12,
+      "split": "dev"
+    },
+    {
+      "group_id": "grp_fa8a07dd",
+      "query_ids": [
+        "q_008",
+        "q_022",
+        "q_027",
+        "q_033",
+        "q_037",
+        "q_038",
+        "q_044",
+        "q_046",
+        "q_049",
+        "q_050"
+      ],
+      "doc_ids": [
+        "0e7496622203"
+      ],
+      "sections": [
+        "Send invoices to collect payments for an online business",
+        "Send invoices to collect payments for an online business > Configure payment collection settings"
+      ],
+      "size": 10,
+      "split": "dev"
+    },
+    {
+      "group_id": "grp_19fa3c76",
+      "query_ids": [
+        "q_002",
+        "q_011",
+        "q_020",
+        "q_026",
+        "q_028",
+        "q_035",
+        "q_042"
+      ],
+      "doc_ids": [
+        "3ebf749d7d60"
+      ],
+      "sections": [
+        "The SetupIntent objectv1",
+        "The SetupIntent objectv1 > Attributes"
+      ],
+      "size": 7,
+      "split": "dev"
+    },
+    {
+      "group_id": "grp_7ac6ed0d",
+      "query_ids": [
+        "q_005",
+        "q_015",
+        "q_021",
+        "q_030",
+        "q_039",
+        "q_040"
+      ],
+      "doc_ids": [
+        "1867355238c6"
+      ],
+      "sections": [
+        "Tour of the API",
+        "Tour of the API > Core concepts"
+      ],
+      "size": 6,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_0dea446a",
+      "query_ids": [
+        "q_003",
+        "q_013",
+        "q_023"
+      ],
+      "doc_ids": [
+        "9cfd3dc94d50"
+      ],
+      "sections": [
+        "The Payment Intents API"
+      ],
+      "size": 3,
+      "split": "dev"
+    },
+    {
+      "group_id": "grp_2a510821",
+      "query_ids": [
+        "q_004",
+        "q_012",
+        "q_032"
+      ],
+      "doc_ids": [
+        "b01344b85e74"
+      ],
+      "sections": [
+        "Asynchronous capture"
+      ],
+      "size": 3,
+      "split": "dev"
+    },
+    {
+      "group_id": "grp_02b1f33e",
+      "query_ids": [
+        "q_007",
+        "q_024"
+      ],
+      "doc_ids": [
+        "1e110cb92845"
+      ],
+      "sections": [
+        "The Checkout Sessions API"
+      ],
+      "size": 2,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_52ce4414",
+      "query_ids": [
+        "q_006",
+        "q_016"
+      ],
+      "doc_ids": [
+        "fbe98c146439"
+      ],
+      "sections": [
+        "The Payment Records API"
+      ],
+      "size": 2,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_f5de15d8",
+      "query_ids": [
+        "q_031",
+        "q_047"
+      ],
+      "doc_ids": [
+        "29e4cf048d28"
+      ],
+      "sections": [
+        "Older payment APIs"
+      ],
+      "size": 2,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_5720275b",
+      "query_ids": [
+        "q_034"
+      ],
+      "doc_ids": [
+        "20c4695bcbb8"
+      ],
+      "sections": [
+        "Get started"
+      ],
+      "size": 1,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_89bd7a6d",
+      "query_ids": [
+        "q_009"
+      ],
+      "doc_ids": [
+        "54d56c4adf4f"
+      ],
+      "sections": [
+        "Accept in-person payments for a direct retail business"
+      ],
+      "size": 1,
+      "split": "test"
+    },
+    {
+      "group_id": "grp_cab55f2a",
+      "query_ids": [
+        "q_045"
+      ],
+      "doc_ids": [
+        "823589c6dc6a"
+      ],
+      "sections": [
+        "Stripe Glossary"
+      ],
+      "size": 1,
+      "split": "test"
+    }
+  ],
+  "assignment": {
+    "q_001": "dev",
+    "q_002": "dev",
+    "q_003": "dev",
+    "q_004": "dev",
+    "q_005": "test",
+    "q_006": "test",
+    "q_007": "test",
+    "q_008": "dev",
+    "q_009": "test",
+    "q_010": "dev",
+    "q_011": "dev",
+    "q_012": "dev",
+    "q_013": "dev",
+    "q_014": "dev",
+    "q_015": "test",
+    "q_016": "test",
+    "q_017": "dev",
+    "q_018": "dev",
+    "q_019": "dev",
+    "q_020": "dev",
+    "q_021": "test",
+    "q_022": "dev",
+    "q_023": "dev",
+    "q_024": "test",
+    "q_025": "dev",
+    "q_026": "dev",
+    "q_027": "dev",
+    "q_028": "dev",
+    "q_029": "dev",
+    "q_030": "test",
+    "q_031": "test",
+    "q_032": "dev",
+    "q_033": "dev",
+    "q_034": "test",
+    "q_035": "dev",
+    "q_036": "dev",
+    "q_037": "dev",
+    "q_038": "dev",
+    "q_039": "test",
+    "q_040": "test",
+    "q_041": "dev",
+    "q_042": "dev",
+    "q_043": "dev",
+    "q_044": "dev",
+    "q_045": "test",
+    "q_046": "dev",
+    "q_047": "test",
+    "q_048": "dev",
+    "q_049": "dev",
+    "q_050": "dev"
+  },
+  "by_split": {
+    "dev": 35,
+    "test": 15
+  },
+  "by_category_split": {
+    "dev": {
+      "terminology": 7,
+      "conceptual": 8,
+      "api_usage": 8,
+      "procedural": 4,
+      "troubleshooting": 4,
+      "contextual": 4
+    },
+    "test": {
+      "terminology": 4,
+      "conceptual": 2,
+      "api_usage": 2,
+      "procedural": 3,
+      "troubleshooting": 2,
+      "contextual": 2
+    }
+  },
+  "warnings": [],
+  "leakage_audit_after_assignment": {
+    "split_method_in_data": "stratified-category",
+    "num_queries": 50,
+    "by_split": {
+      "dev": 35,
+      "test": 15
+    },
+    "by_category_split": {
+      "dev": {
+        "terminology": 7,
+        "conceptual": 8,
+        "api_usage": 8,
+        "procedural": 4,
+        "troubleshooting": 4,
+        "contextual": 4
+      },
+      "test": {
+        "terminology": 4,
+        "conceptual": 2,
+        "api_usage": 2,
+        "procedural": 3,
+        "troubleshooting": 2,
+        "contextual": 2
+      }
+    },
+    "num_groups": 12,
+    "group_sizes": [
+      12,
+      10,
+      7,
+      6,
+      3,
+      3,
+      2,
+      2,
+      2,
+      1,
+      1,
+      1
+    ],
+    "groups_spanning_splits": [],
+    "shared_documents": [],
+    "shared_sections": [],
+    "exact_duplicates_across_splits": [],
+    "near_duplicates_across_splits": [],
+    "near_duplicate_threshold": 0.6,
+    "leakage_found": false,
+    "summary": "No document, section, duplicate or near-duplicate overlap across splits."
+  }
+}
